@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+svg{
+  background-color: white;
+  margin: 0.5%;
+  transition-property: width, height, margin, background-color;
+  transition-duration: 500ms;
+}
+
+svg:hover{
+  height: 48px;
+  width: 48px;
+  margin: 0;
+  z-index: 5;
+  transition-property: width, height, margin, background-color;
+  transition-duration: 300ms;
+}
+

@@ -1,0 +1,37 @@
+
+.fade-enter {
+
+    left: 100%;
+}
+.fade-enter-active {
+    z-index: 5;
+    left: 0;
+    transition: left 1s cubic-bezier(.5,1,.5,1);
+}
+
+.fade-exit {
+    left: 0;
+}
+
+.fade-exit-active {
+    left: 0;
+    transition: left 0.5s cubic-bezier(.5,1,.5,1);
+}
+
+
+.slider{
+    transition: left 1s cubic-bezier(.5,1,.5,1);
+}
+
+.slider:nth-child(2){
+    z-index: 4;
+}
+.slider:nth-child(3){
+    z-index: 3;
+}
+.slider:nth-child(4){
+    z-index: 2;
+}
+.slider:nth-child(5){
+    z-index: 1;
+}
