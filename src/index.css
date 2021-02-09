@@ -8,14 +8,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-svg{
+.socialMedia{
   background-color: white;
-  margin: 0.5%;
+   height: 32px;
+   width: 32px;
+  margin: 6px;
   transition-property: width, height, margin, background-color;
   transition-duration: 500ms;
 }
 
-svg:hover{
+.socialMedia:hover{
   height: 48px;
   width: 48px;
   margin: 0;
@@ -24,7 +26,7 @@ svg:hover{
   transition-duration: 300ms;
 }
 
-a svg{
+a .socialMedia{
   color: black;
 }
 
@@ -55,7 +57,7 @@ a svg{
 .homeBlock{
   border: 5px solid black;
   width: 100px;
-  height: 100px;
+  height: 200px;
 }
 
 
