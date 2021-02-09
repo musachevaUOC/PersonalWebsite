@@ -12,7 +12,7 @@ function Contact() {
 
     return(
         <Col className="slider" style={{...styles, background: '#c3989a'}}>
-            <h1 style={{textAlign: "center"}}>Contact me! please..</h1>
+            <h1 style={{textAlign: "center"}}>Contact me!</h1>
             <Row className="justify-content-center">
                 <Col md={4} >
                     <Form method="post" onSubmit={(event) => {

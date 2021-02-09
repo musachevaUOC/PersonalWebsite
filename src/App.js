@@ -82,8 +82,8 @@ function Social(){
 
         <>
             <Col>
-                <a href="google.com"><LiLogo href="google.com" width="32" height="32"/></a>
-                <a href="google.com"><GhLogo width="32" height="32"/></a>
+                <a href="https://www.linkedin.com/in/mikhail-usacheva-uryvskiy-829052200/"><LiLogo width="32" height="32"/></a>
+                <a href="https://github.com/musachevaUOC"><GhLogo width="32" height="32"/></a>
             </Col>
         </>
 
