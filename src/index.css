@@ -55,11 +55,17 @@ a .socialMedia{
 }
 
 .homeBlock{
+  background-color: rgba(255,255,255,.5);
   border: 5px solid black;
-  width: 100px;
+  margin: 1%;
+  width: 98%;
   height: 200px;
 }
 
+.homeBlock:hover{
+  margin: 0;
+  width: 100%;
+}
 
 .centered {
   text-align: center;
@@ -70,4 +76,8 @@ a .socialMedia{
   top: 50%;
   left: 50%;
   transform: translate(-22%, -50%);
+}
+
+p{
+
 }
