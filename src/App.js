@@ -55,11 +55,7 @@ function App() {
                         </Switch>
                     </CSSTransition>
                 </TransitionGroup>
-
             </Row>
-
-
-
         </Container>
 
 
@@ -86,8 +82,8 @@ function Social(){
 
         <>
             <Col>
-                <LiLogo width="32" height="32"/>
-                <GhLogo width="32" height="32"/>
+                <a href="google.com"><LiLogo href="google.com" width="32" height="32"/></a>
+                <a href="google.com"><GhLogo width="32" height="32"/></a>
             </Col>
         </>
 

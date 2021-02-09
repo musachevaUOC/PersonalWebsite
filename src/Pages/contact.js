@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -9,10 +9,6 @@ import Button from 'react-bootstrap/Button';
 
 
 function Contact() {
-
-    const [mail, setMail] = useState('a');
-    const [title, setTitle] = useState('a');
-    const [text, setText] = useState('a');
 
     return(
         <Col className="slider" style={{...styles, background: '#c3989a'}}>
@@ -28,15 +24,15 @@ function Contact() {
                         })}}>
                         <Form.Group controlId="formEmail">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control name="email" onChange={(value)=>{setMail(value)}} type="email" placeHolder="Enter your email here"/>
+                            <Form.Control name="email" type="email" placeHolder="Enter your email here"/>
                         </Form.Group>
                         <Form.Group controlId="formTitle">
                             <Form.Label>Title</Form.Label>
-                            <Form.Control name="title" onChange={(value)=>{setTitle(value)}} type="text" placeHolder="Enter a title here" />
+                            <Form.Control name="title" type="text" placeHolder="Enter a title here" />
                         </Form.Group>
                         <Form.Group controlId="formText">
                             <Form.Label>Text</Form.Label>
-                            <Form.Control name="text" onChange={(value)=>{setText(value)}} as="textarea" rows={3} placeHolder="Enter message here"/>
+                            <Form.Control name="text" as="textarea" rows={3} placeHolder="Enter message here"/>
                         </Form.Group>
                         <Button type="submit" variant="info"> Send </Button>
                     </Form>
