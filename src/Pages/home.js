@@ -13,7 +13,7 @@ import {ReactComponent as User} from '../resources/svgs/home/user.svg';
 function Home() {
 
     return(
-        <Col className="slider" style={{...styles, background: 'LightBlue'}}>
+        <div className="slider" style={{...styles, background: 'LightBlue'}}>
             <Row className="justify-content-xl-center" noGutters>
                 <Col xl={4} className="m-2">
                     <LinkContainer to="/AboutMe">
@@ -42,7 +42,7 @@ function Home() {
                     </LinkContainer>
                 </Col>
             </Row>
-        </Col>
+        </div>
     );
 }
 

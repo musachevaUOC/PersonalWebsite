@@ -8,10 +8,12 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 
+//TODO: implement POST
+
 function Contact() {
 
     return(
-        <Col className="slider" style={{...styles, background: '#c3989a'}}>
+        <div className="slider" style={{...styles, background: '#c3989a'}}>
             <h1 style={{textAlign: "center"}}>Contact me!</h1>
             <Row className="justify-content-center">
                 <Col md={4} >
@@ -38,7 +40,7 @@ function Contact() {
                     </Form>
                 </Col>
             </Row>
-        </Col>
+        </div>
     );
 }
 

@@ -12,14 +12,14 @@ body {
   background-color: white;
    height: 32px;
    width: 32px;
-  margin: 6px;
+  margin: 7px;
   transition-property: width, height, margin, background-color;
   transition-duration: 500ms;
 }
 
 .socialMedia:hover{
-  height: 48px;
-  width: 48px;
+  height: 46px;
+  width: 46px;
   margin: 0;
   z-index: 5;
   transition-property: width, height, margin, background-color;
@@ -33,7 +33,6 @@ a .socialMedia{
 .projImg{
 
   opacity: 0.5;
-  border-radius: 100%;
   width: 192px;
   height: 192px;
   margin: 32px;
@@ -56,15 +55,21 @@ a .socialMedia{
 
 .homeBlock{
   background-color: rgba(255,255,255,.5);
-  border: 5px solid black;
-  margin: 1%;
-  width: 98%;
+  border-bottom: 5px solid black;
+  border-radius: 20px;
   height: 200px;
 }
 
 .homeBlock:hover{
-  margin: 0;
-  width: 100%;
+  margin-top: 1px;
+  border-bottom: 3px solid black;
+  height: 199px;
+}
+
+.homeBlock:active{
+  margin-top: 1px;
+  border-bottom: 0;
+  height: 197px;
 }
 
 .centered {
@@ -78,6 +83,13 @@ a .socialMedia{
   transform: translate(-22%, -50%);
 }
 
-p{
-
+span{
+  pointer-events: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

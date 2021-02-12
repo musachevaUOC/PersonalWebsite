@@ -36,8 +36,8 @@ function App() {
                     <NavBar/>
                 </Col>
             </Row>
-            <Row>
-                <TransitionGroup>
+            <Row noGutters>
+                <TransitionGroup component={null}>
                     <CSSTransition key={location.key} classNames="fade" timeout={1000}>
                         <Switch location={location}>
                             <Route path="/AboutMe">

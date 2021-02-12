@@ -10,12 +10,12 @@ import {Link} from 'react-router-dom';
 function AboutMe() {
 
     return(
-        <Col className="slider" style={{...styles, background: 'DarkGray'}}>
-            <Row className="justify-content-md-center mt-5">
-                <Col md={4}>
+        <div className="slider" style={{...styles, background: 'DarkGray'}}>
+            <Row className="h-100 mt-5" style={{overflow: "scroll"}}>
+                <Col lg={6} className="d-flex justify-content-center mb-5">
                     <img className="personalImage" width={400} height={250} src={foto} alt="myself"/>
                 </Col>
-                <Col md="{1}">
+                <Col lg={6} className="d-flex justify-content-center">
                     <p>I'm a computer science student from the Open University of Catalonia (UOC). <br/>
                         Although I lack professional experience, I have a particular interest on software<br/>
                         development and building software implementations of things I find interesting. <br/>
@@ -36,7 +36,7 @@ function AboutMe() {
                     </p>
                 </Col>
             </Row>
-        </Col>
+        </div>
     );
 }
 
