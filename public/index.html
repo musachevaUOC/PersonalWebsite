@@ -3,9 +3,17 @@
   <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <title>Mikhail Usacheva Website</title>
+      <script type="text/javascript">
+          window.onloadCallback = function(){
+              grecaptcha.render('g-recaptcha', {'sitekey' : '6LctEFkaAAAAADzBLv_VDj09pxqo76r1qhPAMnky'});
+          }
+      </script>
   </head>
   <body style="overflow: hidden">
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+          async defer>
+  </script>
   </body>
 </html>
