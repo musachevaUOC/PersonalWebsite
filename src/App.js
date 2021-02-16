@@ -57,8 +57,6 @@ function App() {
                 </TransitionGroup>
             </Row>
         </Container>
-
-
   );
 }
 
