@@ -29,14 +29,14 @@ app.post('/', function (req, res) {
          if(resp.data.success){
              sendDataToEmail(req).then((info)=>{
                  console.log(info);
-                 res.send("all OK");
+                 res.send("Message was sent successfully!");
              }).catch((err)=>{
                 console.log(err);
-                res.send("not ok");
+                res.send("Something went wrong, please try again.");
              });
 
          }else{
-             res.send("not ok");
+             res.send("Something went wrong, please try again. are you a robot?");
          }
      })
      .catch(error => {

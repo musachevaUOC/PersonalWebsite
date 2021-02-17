@@ -5,7 +5,11 @@
       <title>Mikhail Usacheva Website</title>
       <script type="text/javascript">
           window.onloadCallback = function(){
-              grecaptcha.render('g-recaptcha', {'sitekey' : '6LctEFkaAAAAADzBLv_VDj09pxqo76r1qhPAMnky'});
+              try{
+                  grecaptcha.render('g-recaptcha', {'sitekey' : '6LctEFkaAAAAADzBLv_VDj09pxqo76r1qhPAMnky'});
+              }catch(err){
+                  console.error(err);
+              }
           }
       </script>
   </head>

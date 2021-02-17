@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button';
 function Contact() {
 
     useEffect(()=>{window.onloadCallback()});
+    const [responseData, setResponseData] = useState("please submit the data");
 
     return(
         <div className="slider" style={{...styles, background: '#c3989a'}}>
@@ -22,7 +23,13 @@ function Contact() {
                         fetch('/', {
                             method: 'POST',
                             body: new URLSearchParams(new FormData(event.target))
-                        })}}>
+                        }).then(response =>{
+                            return response.text()
+                        }).then(data=>{
+                            console.log(data);
+                            setResponseData(data);
+                        });
+                        }}>
                         <Form.Group controlId="formEmail">
                             <Form.Label>Email</Form.Label>
                             <Form.Control name="email" type="email" placeHolder="Enter your email here"/>
@@ -35,11 +42,14 @@ function Contact() {
                             <Form.Label>Text</Form.Label>
                             <Form.Control name="text" as="textarea" rows={3} placeHolder="Enter message here"/>
                         </Form.Group>
-                        <Row noGutters>
-                            <Col lg={8}>
+                        <Row noGutters className="justify-content-sm-center">
+                            <Col md={6} xl={7}>
                                 <div id="g-recaptcha"> </div>
                             </Col>
-                            <Col lg={{span:2, offset:2}}>
+                            <Col className="confirmationBox" xl={3}>
+                                {responseData}
+                            </Col>
+                            <Col md={1} xl={1}>
                                 <Button type="submit" size="lg" variant="info"> Send </Button>
                             </Col>
                         </Row>
